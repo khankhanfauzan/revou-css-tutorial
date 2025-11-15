@@ -6,42 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas Box Model</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <h1>Galeri Produk Kami</h1>
+    <header class="shadow">
+        <nav>
+            <h1>Blog</h1>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
+            <label for="menu-toggle" class="hamburger-menu" aria-label="Open navigation">
+                <i id="hamburger-icon" class="ri-menu-line"></i>
+                <i id="close-icon" class="ri-close-large-line"></i>
+            </label>
+            <div class="hide-menu">
+                <ul class="flex nav-bar-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
-        <section id="products-showcase">
-            <div class="card-container">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2670"
-                        alt="Nama Produk">
-                    <div class="card-content">
-                        <h3>Nama Produk Keren</h3>
-                        <p class="price">Rp 5.000.000</p>
-                        <p class="description">Ini adalah deskripsi singkat produk yang menjelaskan betapa hebatnya
-                            produk
-                            ini.
-                        </p>
-                        <a href="#" class="button">Beli Sekarang</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1760"
-                        alt="Nama Produk Lain">
-                    <div class="card-content">
-                        <h3>Produk Lain yang Bagus</h3>
-                        <p class="price">Rp 1.750.000</p>
-                        <p class="description">Deskripsi untuk produk kedua. Kualitas terbaik, harga terjangkau.</p>
-                        <a href="#" class="button">Beli Sekarang</a>
-                    </div>
-                </div>
-            </div>
+        <section class="search-bar">
+            <form class="search-form" action="#" method="get">
+                <input type="text" name="q" placeholder="Search articles" aria-label="Search">
+                <button type="submit" class="search-btn" aria-label="Search">
+                    <i class="ri-search-line"></i>
+                    <span>Search</span>
+                </button>
+            </form>
         </section>
+
+        <section class="head-article container">
+            <article>
+                <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZWxlY3Ryb25pY3N8ZW58MHx8MHx8fDA%3D"
+                    alt="main article image">
+                <div class="article-content">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse est libero minima sunt perferendis
+                        rem
+                        repudiandae autem quia at dolore!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut veniam expedita repudiandae ducimus,
+                        quaerat
+                        nulla harum eligendi cum consectetur aperiam labore nesciunt esse velit earum? Aut commodi
+                        laborum
+                        veritatis facere!</p>
+                    <ul class="article-categories">
+                        <li class="chips">Tech</li>
+                        <li class="chips">Laptop</li>
+                        <li class="chips">Headphone</li>
+                    </ul>
+                    <a class="text-button" href="#">Read full article</a>
+                </div>
+            </article>
+        </section>
+        <div class="flex main-article">
+            <section class="latest-post-article">
+                <h2 class="article-title">Latest Post</h2>
+                <article class="article-card flex container">
+                    <img src="https://plus.unsplash.com/premium_photo-1661382011487-cd3d6b1d9dff?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGVzaWdufGVufDB8fDB8fHww"
+                        alt="main article image">
+
+                    <div class="article-content">
+                        <h3>Title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut veniam expedita repudiandae
+                            ducimus,
+                            quaerat
+                            nulla harum eligendi cum consectetur aperiam labore nesciunt esse velit earum? Aut commodi
+                            laborum
+                            veritatis facere!</p>
+                        <ul class="article-categories">
+                            <li class="chips">Design</li>
+                            <li class="chips">Colors</li>
+
+                        </ul>
+                        <a class="text-button" href="#">Read full article</a>
+                    </div>
+                </article>
+                <article class="article-card flex container">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D"
+                        alt="main article image">
+                    <div class="article-content">
+                        <h3>Title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut veniam expedita repudiandae
+                            ducimus,
+                            quaerat
+                            nulla harum eligendi cum consectetur aperiam labore nesciunt esse velit earum? Aut commodi
+                            laborum
+                            veritatis facere!</p>
+                        <ul class="article-categories">
+                            <li class="chips">Code</li>
+                            <li class="chips">Development</li>
+
+                        </ul>
+                        <a class="text-button" href="#">Read full article</a>
+                    </div>
+                </article>
+            </section>
+            <section class="side-bar">
+                <aside>
+                    <div class="categories container">
+                        <h4>Categories</h4>
+                        <p><i class="ri-device-line"></i>Tech</p>
+                        <p><i class="ri-pencil-line"></i>Design</p>
+                        <p><i class="ri-code-line"></i>Development</p>
+                    </div>
+                    <div class="author container">
+                        <h4>About the Author</h4>
+                        <div class="profile flex">
+                            <img src="https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2F0fGVufDB8fDB8fHww"
+                                alt="author image">
+                            <div class="profile-name">
+                                <p>Fauzan Akbar Khan</p>
+                                <i>Software Engineer</i>
+                            </div>
+                        </div>
+                        <p class="profile-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                            natus itaque quae est ad
+                            consequuntur maiores, laudantium tenetur quisquam ipsa.</p>
+                        <div class="social-media flex">
+                            <a href="https://github.com/khankhanfauzan" target="_blank"><i
+                                    class="ri-github-line"></i></a>
+                            <a href="https://www.linkedin.com/in/fauzanakbarkhan/" target="_blank"><i
+                                    class="ri-linkedin-line"></i></a>
+                            <a href="https://www.instagram.com/fauzanx34/" target="_blank"><i
+                                    class="ri-instagram-line"></i></a>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+        </div>
     </main>
 
 </body>
